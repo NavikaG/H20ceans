@@ -14,7 +14,7 @@ temp = df[df['marine_site_name'] == "Ecola"]
 
 #list of unique years
 yearList = temp['year'].unique()
-print(yearList)
+#print(yearList)
 #for loop to calculate mean for every year in 'years' list
 for x in yearList:
     newdf = temp[temp['year'] == x]
