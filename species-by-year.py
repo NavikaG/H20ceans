@@ -1,10 +1,18 @@
 import pandas as pd 
 import numpy as np 
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
+import matplotlib 
 
 df = pd.read_csv('seastarkat_count_totals_download.csv')
 
-df = df[df['site_code'] == "BML"]
+df = df[df['site_code'] == "ALEG"]
+
+animals = df['species_code'].unique()
+N=len(animals)
+
+# print (N)
+
+
 # dfAlg=iloc['ALEG']
 
 year = df[df.columns[8]]
@@ -12,7 +20,24 @@ year = df[df.columns[8]]
 
 total = df[df.columns[14]]
 
-plt.scatter(year, total)
+
+label = animals
+colors = ['red','green','blue']
+
+for x in animals:
+    y=np.random.rand(3,)
+    newdf = df[df['species_code'] == x]
+
+    #print(newdf[newdf.columns[13]])
+    tempTotal = newdf[newdf.columns[14]]
+    tempYear = newdf[newdf.columns[8]]
+    
+    plt.scatter(tempYear, tempTotal, marker = "o", label=x, color = y)
+    plt.legend((animals), loc='upper right')
+
+#plt.scatter(year, total, c = label]
+
+#plt.scatter(year, total, color=N)
 
 #print(total)
 
