@@ -1,4 +1,4 @@
-group_code,site_code,marine_site_name,marine_sort_order,latitude,longitude,marine_common_season,marine_season_code,marine_common_year,season_sequence,season_name,target_assemblage,method_code,species_code,total,mpa_designation,mpa_region,georegion,bioregion,state_province,island,last_updated
+group_code,site_code,marine_site_name,marine_sort_order,latitude,longitude,marine_common_season,marine_season_code,year,season_sequence,season_name,target_assemblage,method_code,species_code,total,mpa_designation,mpa_region,georegion,bioregion,state_province,island,last_updated
 UCLA,ALEG,Alegria,6420,34.46714020,-120.27738,85,SP02,2002,1,Spring,sea_star,IP,PISOCH,123,reference,South Coast,CA South,Government Point to Mexico,California,Mainland,2019-10-31 11:29:34
 UCLA,ALEG,Alegria,6420,34.46714020,-120.27738,87,FA02,2002,3,Fall,sea_star,IP,PISOCH,202,reference,South Coast,CA South,Government Point to Mexico,California,Mainland,2019-10-31 11:29:34
 UCLA,ALEG,Alegria,6420,34.46714020,-120.27738,89,SP03,2003,1,Spring,sea_star,IP,PISOCH,153,reference,South Coast,CA South,Government Point to Mexico,California,Mainland,2019-10-31 11:29:34
